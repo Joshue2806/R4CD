@@ -1,0 +1,37 @@
+---
+title: '**T3_Visualización**'
+subtitle: '**Unidad 5: Visualización**'
+author: "Joshué Ruiz"
+date: "2023-03-08"
+output: 
+  html_document:
+    highlight: espresso
+    theme: paper
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
+![](./img/logo.ikiam.png)
+
+## Instrucciones
+
+Utilice un documento tipo *.Rmd* o *.qmd* y genere un reporte *html.* Estos dos documentos (Rmd y html) guardelos con control de cambios en un repositorio de GitHub y **pegue solamente el enlace del repositorio** en esta entrega.
+
+La entrega debe contener los códigos para obtener las siguientes figuras: 
+
+## 1. Réplica de la figura compuesta.
+
+![](./img/multi.png)
+Figura compuesta
+
+```{r cars}
+summary(cars)
+```
+
+## 2. Réplica de la figura embebida
+
+![](./img/embebbed.png)
+Figura embebida
+
