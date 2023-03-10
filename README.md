@@ -1,8 +1,9 @@
 # R4CD
 Repositorio del curso de "R para Ciencia de Datos"
+Estudiante: Joshué Ruiz
 
 ## Tareas
-- Ingrese a la tarea 3 aquí: [Tarea 1](https://github.com/Joshue2806/R4CD/tree/main/tarea3)
+- Ingrese a la tarea 3 aquí: [Tarea 3](https://github.com/Joshue2806/R4CD/tree/main/tarea3)
 
 ## Clases
 - Clases en la página de [Youtube](https://youtube.com/playlist?list=PLdBCqyJM7Y72YtvvXTSi3KufgyWD6fgQq)
