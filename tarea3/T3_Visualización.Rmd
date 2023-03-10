@@ -96,15 +96,18 @@ library("ggpubr")
 library("ggrepel")
 
 ruta <- "https://raw.githubusercontent.com/martintinch0/CienciaDeDatosParaCuriosos/master/data/gapminder.csv"
-df_gapminder <- read.table(file = ruta, sep=';', header = TRUE, stringsAsFactors = FALSE)
+df_gapminder <- read.table(file = ruta, sep=';', header = TRUE, 
+                           stringsAsFactors = FALSE)
 
-df_gapminder %>% 
-  filter (between(year, 2007, 2007)) %>%
+df_g <- df_gapminder %>% 
+  filter (year == 2007) 
   
-  ggplot(aes(x = gdpPercap, y = lifeExp, 
-             size=pop, color=continent)) +
+esp1 =  
+  ggplot(df_g,aes(x = gdpPercap, y = lifeExp, 
+             size=pop, color=continent)) + 
   geom_point() + 
-  geom_text_repel(aes(label=country), size = 3) +
+  geom_text_repel(aes(label=country), size = 1.5, 
+                  max.overlaps = 10) +
   labs(x = "Ingreso promedio (USD)",
        y = "Expectativa de vida al nacer (años)",
        title="Esperanza de vida debido al ingreso promedio - 2007",
@@ -117,6 +120,24 @@ df_gapminder %>%
         panel.background = element_rect(fill = "white", colour = "grey80"), 
         panel.grid.major = element_line(colour = "grey90", linetype = "dotted"))
   
+esp2 =
+  ggplot(df_g, aes(x = gdpPercap, y = lifeExp, 
+             size=pop, color=continent)) +
+  geom_point() + 
+  geom_text_repel(aes(label=country), size = 1.5) +
+  scale_x_continuous(limits = c(6000, 8000)) +
+  scale_y_continuous(limits = c(65, 80)) +
+  guides(size=FALSE) + 
   
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        legend.title = element_text(face = "bold", color = "black", size= 10), 
+        panel.background = element_rect(fill = "white", colour = "grey80"), 
+        panel.grid.major = element_line(colour = "grey90", linetype = "dotted"))
+
+embeb = esp1 + annotation_custom(ggplotGrob(esp2), 
+                                 xmin = 30000, xmax = 50000, 
+                                 ymin = 40, ymax = 60)
+embeb
   
 ```
