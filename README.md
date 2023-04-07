@@ -8,6 +8,8 @@ Estudiante: Joshué Ruiz
 ## Clases
 - Clases en la página de [Youtube](https://youtube.com/playlist?list=PLdBCqyJM7Y72YtvvXTSi3KufgyWD6fgQq)
 
+- Comandos de práctica de la [Unidad 6](https://github.com/Joshue2806/R4CD/tree/main/u6_funciones) 
+
 ## Info adicional
 -  Información será añadida `después` :trollface: :+1:
 
