@@ -10,6 +10,9 @@ Estudiante: Joshué Ruiz
 
 - Comandos de práctica de la [Unidad 6](https://github.com/Joshue2806/R4CD/tree/main/u6_funciones) 
 
+- Paquete de práctica [ikiamR](https://github.com/Joshue2806/ikiamR) 
+ 
+
 ## Info adicional
 -  Información será añadida `después` :trollface: :+1:
 
