@@ -188,3 +188,19 @@ lm_cut = function(corte){ #Recibe argumento de corte
 
 resultados =  lapply(cuts, lm_cut)
 resultados[[5]]
+
+
+#Clase 3 - 14 mar 20233
+
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("gualapuromoises/residualR")
+
+  #Paquetes requeridos
+library("usethis")
+library("testthat")
+library("roxygen2")
+
+library(residualR)
+potencia(2,3)
+
+figscatter(iris, "Petal.Length", "Petal-Width")
